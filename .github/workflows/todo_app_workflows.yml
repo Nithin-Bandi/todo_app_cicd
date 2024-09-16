@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build_and_install:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-  test_and_verify:
     - name: Run tests
       run: |
         pytest --cov=app tests/
