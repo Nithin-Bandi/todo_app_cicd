@@ -23,7 +23,7 @@ jobs:
         run: python test_app.py
 
       - name: Build Docker Image
-        run: docker build -t my-flask-app:latest -f  DockerFile .
+        run: docker build -t todo_flask_app:latest -f  DockerFile .
 
 
       - name: Configure AWS credentials
